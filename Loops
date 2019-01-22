@@ -1,0 +1,81 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jan 21 16:37:04 2019
+
+@author: sort
+"""
+
+#using if else to deect correct password
+
+username = ""
+password = ""
+
+while not username:
+ username = input()
+while not password:
+  password = raw_input()
+  
+if(username ==  "Raji" & password == "Raji"):
+    print("Hi Raji")
+if(username =="Shri" & password == "Shri"):
+    print("Hi Shri")
+    
+    
+    # Write a program that simulates a fortune cookie. The program
+#should display one of five unique fortunes, at random, each
+#time it’s run.
+    
+print("Fortune Cookie's:Try it yourself")
+
+import random
+
+rand = random.choice([1,2,3,4,5])
+
+if rand == 1:
+    print("Lucky you")
+if rand == 2:
+    print("Have a wonderful day")
+if rand == 3:
+    print("Very bad")
+if rand == 4:
+    print("You deserve the best")
+if rand == 5:
+    print("You are awesome")
+
+#Write a program that flips a coin 100 times and then tells you
+#the number of heads and tails.
+
+heads = 0
+tails = 0
+count = 0
+
+
+print("")
+
+while count<100:
+    
+    coin_flip = random.randrange(2)
+    if coin_flip == 0:
+        heads = heads+1
+    else:
+        tails = tails+1
+    count = count+1
+print "Headcounts",heads
+print "tailcount",tails
+
+raw_input("Press Enter key to exit:")
+    
+#Modify the Guess My Number game so that the player has a
+#limited number of guesses. If the player fails to guess in time,
+#the program should display an appropriately chastising
+#message.
+
+
+
+
+
+
+
+
+
+
